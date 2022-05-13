@@ -1,0 +1,14 @@
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: $accent;
+}
+.logo__light {
+  color: $light-logo;
+}
+.logo__dark {
+  color: $dark-logo;
+}

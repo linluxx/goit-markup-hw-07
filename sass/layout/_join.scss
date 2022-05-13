@@ -1,0 +1,37 @@
+.footer__join {
+  display: block;
+  margin-right: 93px;
+}
+
+.join__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $scnd-title;
+  margin-bottom: 20px;
+}
+
+.join__list {
+  display: flex;
+}
+
+.join__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.join__button {
+  background-color: $social-btn-bg-scnd;
+  fill: $social-btn-fill-scnd;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $active-btn-bg;
+  }
+}
+
+.join__icon {
+  width: 20px;
+  height: 20px;
+}
