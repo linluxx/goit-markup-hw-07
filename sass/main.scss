@@ -1,12 +1,17 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
 @import './base/reset';
+
 @import './components/container';
 @import './components/section';
 @import './components/title';
 @import './components/social';
 @import './components/button';
 @import './components/logo';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/modal-form';
+
 @import './layout/header';
 @import './layout/hero';
 @import './layout/features';
@@ -16,7 +21,6 @@
 @import './layout/footer';
 @import './layout/join';
 @import './layout/subscribe';
-@import './components/backdrop';
-@import './components/modal';
+
 @import './portfolio/btn-list';
 @import './portfolio/portfolio-cards';
