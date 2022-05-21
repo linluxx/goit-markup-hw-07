@@ -51,10 +51,27 @@ ul {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section {
@@ -71,7 +88,19 @@ ul {
   margin-bottom: 50px;
 }
 
-.social {
+.section--no-padding-top {
+  padding-top: 0;
+}
+
+.section--team-bg {
+  background-color: #f5f4fa;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,6 +109,32 @@ ul {
   border-radius: 50%;
   border-color: transparent;
   padding: 0;
+}
+
+.social__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.social__button--team {
+  background-color: #ffffff;
+  fill: #afb1b8;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social__button--team:hover, .social__button--team:focus {
+  background-color: #2196f3;
+  fill: #ffffff;
+}
+
+.social__button--join {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social__button--join:hover, .social__button--join:focus {
+  background-color: #2196f3;
 }
 
 .button {
@@ -308,13 +363,13 @@ ul {
   border-bottom: 1px solid #ececec;
 }
 
-.header__logo {
+.logo__header {
   margin-right: 92px;
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
-.header .container {
+.header__container {
   display: flex;
   align-items: center;
 }
@@ -402,9 +457,6 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-.hero__section {
   margin-left: auto;
   margin-right: auto;
 }
@@ -478,10 +530,6 @@ ul {
   height: 70px;
 }
 
-.about {
-  padding-top: 0;
-}
-
 .about-list {
   display: flex;
 }
@@ -513,10 +561,6 @@ ul {
   color: #ffffff;
 }
 
-.team {
-  background-color: #f5f4fa;
-}
-
 .team-list {
   display: flex;
 }
@@ -529,7 +573,7 @@ ul {
   margin-right: 30px;
 }
 
-.team-description {
+.team-list__box {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: #ffffff;
@@ -537,7 +581,7 @@ ul {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-description__top-text {
+.team-list__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -547,7 +591,7 @@ ul {
   margin-bottom: 10px;
 }
 
-.team-description__text {
+.team-list__text {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -556,46 +600,26 @@ ul {
   margin-bottom: 16px;
 }
 
-.team-social__list {
+.social__team {
   display: flex;
   justify-content: center;
 }
 
-.team-social__item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.team-social__button {
-  background-color: #ffffff;
-  fill: #afb1b8;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.team-social__button:hover, .team-social__button:focus {
-  background-color: #2196f3;
-  fill: #ffffff;
-}
-
-.team-social__icon {
-  width: 20px;
-  height: 20px;
-}
-
-.clients-list {
+.clients {
   display: flex;
   justify-content: center;
 }
 
-.clients-list__item {
+.clients__item {
   width: 170px;
   height: 92px;
 }
 
-.clients-list__item:not(:last-child) {
+.clients__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.clients-list__link {
+.clients__link {
   width: 100%;
   height: 100%;
   border: 1px solid #afb1b8;
@@ -607,12 +631,12 @@ ul {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-list__link:hover, .clients-list__link:focus {
+.clients__link:hover, .clients__link:focus {
   border-color: #2196f3;
   fill: #2196f3;
 }
 
-.clients-list__icon {
+.clients__icon {
   width: 106px;
   height: 60px;
 }
@@ -623,7 +647,7 @@ ul {
   padding-bottom: 60px;
 }
 
-.footer .container {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
@@ -694,10 +718,6 @@ ul {
   display: flex;
 }
 
-.join__item:not(:last-child) {
-  margin-right: 10px;
-}
-
 .join__button {
   background-color: rgba(255, 255, 255, 0.1);
   fill: #ffffff;
@@ -706,11 +726,6 @@ ul {
 
 .join__button:hover, .join__button:focus {
   background-color: #2196f3;
-}
-
-.join__icon {
-  width: 20px;
-  height: 20px;
 }
 
 .subscribe__text {

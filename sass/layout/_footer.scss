@@ -2,11 +2,11 @@
   background-color: $background;
   padding-top: 60px;
   padding-bottom: 60px;
+}
 
-  .container {
-    display: flex;
-    align-items: baseline;
-  }
+.footer__container {
+  display: flex;
+  align-items: baseline;
 }
 
 .footer__contacts {

@@ -22,8 +22,8 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <a class="logo header__logo" href="./index.html"
+      <div class="container header__container">
+        <a class="logo logo__header" href="./index.html"
           >Web<span class="logo__dark">Studio</span>
         </a>
         <nav class="navigation">
@@ -60,7 +60,7 @@
       </div>
     </header>
     <main>
-      <section class="hero hero__section">
+      <section class="hero">
         <div class="container">
           <h1 class="hero__title">
             Эффективные решения <br />
@@ -120,7 +120,7 @@
           </ul>
         </div>
       </section>
-      <section class="about section">
+      <section class="section section--no-padding-top">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="about-list">
@@ -139,255 +139,204 @@
           </ul>
         </div>
       </section>
-      <section class="team section">
+      <section class="section section--team-bg">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__item">
               <img src="./images/team-card-1.jpg" alt="Игорь Демьяненко" width="270" height="260" />
-              <div class="team-description">
-                <h3 class="team-description__top-text">Игорь Демьяненко</h3>
-                <p class="team-description__text">Product Designer</p>
-                <div class="team-social">
-                  <ul class="team-social__list">
-                    <li class="team-social__item">
-                      <button type="button" class="team-social__button social">
-                        <svg class="team-social__icon">
-                          <use href="./images/sprite.svg#icon-instagram"></use>
-                        </svg>
-                      </button>
-                    </li>
-                    <li class="team-social__item">
-                      <button type="button" class="team-social__button social">
-                        <svg class="team-social__icon">
-                          <use href="./images/sprite.svg#icon-twitter"></use>
-                        </svg>
-                      </button>
-                    </li>
-                    <li class="team-social__item">
-                      <button type="button" class="team-social__button social">
-                        <svg class="team-social__icon">
-                          <use
-                            href="./images/sprite.svg#icon-facebook"
-                            width="20"
-                            height="20"
-                          ></use>
-                        </svg>
-                      </button>
-                    </li>
-                    <li class="team-social__item">
-                      <button type="button" class="team-social__button social">
-                        <svg class="team-social__icon">
-                          <use
-                            href="./images/sprite.svg#icon-linkedin"
-                            width="20"
-                            height="20"
-                          ></use>
-                        </svg>
-                      </button>
-                    </li>
-                  </ul>
-                </div>
+              <div class="team-list__box">
+                <h3 class="team-list__title">Игорь Демьяненко</h3>
+                <p class="team-list__text">Product Designer</p>
+                <ul class="social social__team">
+                  <li class="social__item">
+                    <button type="button" class="social__button social__button--team">
+                      <svg class="social__icon">
+                        <use href="./images/sprite.svg#icon-instagram"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="social__item">
+                    <button type="button" class="social__button social__button--team">
+                      <svg class="social__icon">
+                        <use href="./images/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="social__item">
+                    <button type="button" class="social__button social__button--team">
+                      <svg class="social__icon">
+                        <use href="./images/sprite.svg#icon-facebook" width="20" height="20"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="social__item">
+                    <button type="button" class="social__button social__button--team">
+                      <svg class="social__icon">
+                        <use href="./images/sprite.svg#icon-linkedin" width="20" height="20"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="team-list__item">
               <img src="./images/team-card-2.jpg" alt="Ольга Репина" width="270" height="260" />
-              <div class="team-description">
-                <h3 class="team-description__top-text">Ольга Репина</h3>
-                <p class="team-description__text">Frontend Developer</p>
-                <div class="team-social">
-                  <ul class="team-social__list">
-                    <li class="team-social__item">
-                      <button type="button" class="team-social__button social">
-                        <svg class="team-social__icon">
-                          <use
-                            href="./images/sprite.svg#icon-instagram"
-                            width="20"
-                            height="20"
-                          ></use>
-                        </svg>
-                      </button>
-                    </li>
-                    <li class="team-social__item">
-                      <button type="button" class="team-social__button social">
-                        <svg class="team-social__icon">
-                          <use href="./images/sprite.svg#icon-twitter"></use>
-                        </svg>
-                      </button>
-                    </li>
-                    <li class="team-social__item">
-                      <button type="button" class="team-social__button social">
-                        <svg class="team-social__icon">
-                          <use
-                            href="./images/sprite.svg#icon-facebook"
-                            width="20"
-                            height="20"
-                          ></use>
-                        </svg>
-                      </button>
-                    </li>
-                    <li class="team-social__item">
-                      <button type="button" class="team-social__button social">
-                        <svg class="team-social__icon">
-                          <use
-                            href="./images/sprite.svg#icon-linkedin"
-                            width="20"
-                            height="20"
-                          ></use>
-                        </svg>
-                      </button>
-                    </li>
-                  </ul>
-                </div>
+              <div class="team-list__box">
+                <h3 class="team-list__title">Ольга Репина</h3>
+                <p class="team-list__text">Frontend Developer</p>
+                <ul class="social social__team">
+                  <li class="social__item">
+                    <button type="button" class="social__button social__button--team">
+                      <svg class="social__icon">
+                        <use href="./images/sprite.svg#icon-instagram" width="20" height="20"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="social__item">
+                    <button type="button" class="social__button social__button--team">
+                      <svg class="social__icon">
+                        <use href="./images/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="social__item">
+                    <button type="button" class="social__button social__button--team">
+                      <svg class="social__icon">
+                        <use href="./images/sprite.svg#icon-facebook" width="20" height="20"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="social__item">
+                    <button type="button" class="social__button social__button--team">
+                      <svg class="social__icon">
+                        <use href="./images/sprite.svg#icon-linkedin" width="20" height="20"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="team-list__item">
               <img src="./images/team-card-3.jpg" alt="Николай Тарасов" width="270" height="260" />
-              <div class="team-description">
-                <h3 class="team-description__top-text">Николай Тарасов</h3>
-                <p class="team-description__text">Marketing</p>
-                <div class="team-social">
-                  <ul class="team-social__list">
-                    <li class="team-social__item">
-                      <button type="button" class="team-social__button social">
-                        <svg class="team-social__icon">
-                          <use
-                            href="./images/sprite.svg#icon-instagram"
-                            width="20"
-                            height="20"
-                          ></use>
-                        </svg>
-                      </button>
-                    </li>
-                    <li class="team-social__item">
-                      <button type="button" class="team-social__button social">
-                        <svg class="team-social__icon">
-                          <use href="./images/sprite.svg#icon-twitter"></use>
-                        </svg>
-                      </button>
-                    </li>
-                    <li class="team-social__item">
-                      <button type="button" class="team-social__button social">
-                        <svg class="team-social__icon">
-                          <use
-                            href="./images/sprite.svg#icon-facebook"
-                            width="20"
-                            height="20"
-                          ></use>
-                        </svg>
-                      </button>
-                    </li>
-                    <li class="team-social__item">
-                      <button type="button" class="team-social__button social">
-                        <svg class="team-social__icon">
-                          <use
-                            href="./images/sprite.svg#icon-linkedin"
-                            width="20"
-                            height="20"
-                          ></use>
-                        </svg>
-                      </button>
-                    </li>
-                  </ul>
-                </div>
+              <div class="team-list__box">
+                <h3 class="team-list__title">Николай Тарасов</h3>
+                <p class="team-list__text">Marketing</p>
+                <ul class="social social__team">
+                  <li class="social__item">
+                    <button type="button" class="social__button social__button--team">
+                      <svg class="social__icon">
+                        <use href="./images/sprite.svg#icon-instagram" width="20" height="20"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="social__item">
+                    <button type="button" class="social__button social__button--team">
+                      <svg class="social__icon">
+                        <use href="./images/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="social__item">
+                    <button type="button" class="social__button social__button--team">
+                      <svg class="social__icon">
+                        <use href="./images/sprite.svg#icon-facebook" width="20" height="20"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="social__item">
+                    <button type="button" class="social__button social__button--team">
+                      <svg class="social__icon">
+                        <use href="./images/sprite.svg#icon-linkedin" width="20" height="20"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="team-list__item">
               <img src="./images/team-card-4.jpg" alt="Михаил Ермаков" width="270" height="260" />
-              <div class="team-description">
-                <h3 class="team-description__top-text">Михаил Ермаков</h3>
-                <p class="team-description__text">UI Designer</p>
-                <div class="team-social">
-                  <ul class="team-social__list">
-                    <li class="team-social__item">
-                      <button type="button" class="team-social__button social">
-                        <svg class="team-social__icon">
-                          <use
-                            href="./images/sprite.svg#icon-instagram"
-                            width="20"
-                            height="20"
-                          ></use>
-                        </svg>
-                      </button>
-                    </li>
-                    <li class="team-social__item">
-                      <button type="button" class="team-social__button social">
-                        <svg class="team-social__icon">
-                          <use href="./images/sprite.svg#icon-twitter"></use>
-                        </svg>
-                      </button>
-                    </li>
-                    <li class="team-social__item">
-                      <button type="button" class="team-social__button social">
-                        <svg class="team-social__icon">
-                          <use
-                            href="./images/sprite.svg#icon-facebook"
-                            width="20"
-                            height="20"
-                          ></use>
-                        </svg>
-                      </button>
-                    </li>
-                    <li class="team-social__item">
-                      <button type="button" class="team-social__button social">
-                        <svg class="team-social__icon">
-                          <use
-                            href="./images/sprite.svg#icon-linkedin"
-                            width="20"
-                            height="20"
-                          ></use>
-                        </svg>
-                      </button>
-                    </li>
-                  </ul>
-                </div>
+              <div class="team-list__box">
+                <h3 class="team-list__title">Михаил Ермаков</h3>
+                <p class="team-list__text">UI Designer</p>
+
+                <ul class="social social__team">
+                  <li class="social__item">
+                    <button type="button" class="social__button social__button--team">
+                      <svg class="social__icon">
+                        <use href="./images/sprite.svg#icon-instagram" width="20" height="20"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="social__item">
+                    <button type="button" class="social__button social__button--team">
+                      <svg class="social__icon">
+                        <use href="./images/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="social__item">
+                    <button type="button" class="social__button social__button--team">
+                      <svg class="social__icon">
+                        <use href="./images/sprite.svg#icon-facebook" width="20" height="20"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="social__item">
+                    <button type="button" class="social__button social__button--team">
+                      <svg class="social__icon">
+                        <use href="./images/sprite.svg#icon-linkedin" width="20" height="20"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
               </div>
             </li>
           </ul>
         </div>
       </section>
-      <section class="clients section">
+      <section class="section">
         <div class="container">
           <h2 class="section__title">Постоянные клиенты</h2>
-          <ul class="clients-list">
-            <li class="clients-list__item">
-              <a href="" class="clients-list__link">
-                <svg class="clients-list__icon">
+          <ul class="clients">
+            <li class="clients__item">
+              <a href="" class="clients__link">
+                <svg class="clients__icon">
                   <use href="./images/sprite.svg#icon-Logo-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-list__item">
-              <a href="" class="clients-list__link">
-                <svg class="clients-list__icon">
+            <li class="clients__item">
+              <a href="" class="clients__link">
+                <svg class="clients__icon">
                   <use href="./images/sprite.svg#icon-Logo-2"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-list__item">
-              <a href="" class="clients-list__link">
-                <svg class="clients-list__icon">
+            <li class="clients__item">
+              <a href="" class="clients__link">
+                <svg class="clients__icon">
                   <use href="./images/sprite.svg#icon-Logo-3"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-list__item">
-              <a href="" class="clients-list__link">
-                <svg class="clients-list__icon">
+            <li class="clients__item">
+              <a href="" class="clients__link">
+                <svg class="clients__icon">
                   <use href="./images/sprite.svg#icon-Logo-4"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-list__item">
-              <a href="" class="clients-list__link">
-                <svg class="clients-list__icon">
+            <li class="clients__item">
+              <a href="" class="clients__link">
+                <svg class="clients__icon">
                   <use href="./images/sprite.svg#icon-Logo-5"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-list__item">
-              <a href="" class="clients-list__link">
-                <svg class="clients-list__icon">
+            <li class="clients__item">
+              <a href="" class="clients__link">
+                <svg class="clients__icon">
                   <use href="./images/sprite.svg#icon-Logo-6"></use>
                 </svg>
               </a>
@@ -397,9 +346,9 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
+      <div class="container footer__container">
         <div class="footer__contacts">
-          <a href=" /" class="footer__logo logo">Web<span class="logo__light">Studio</span></a>
+          <a href=" /" class="logo footer__logo">Web<span class="logo__light">Studio</span></a>
           <address class="footer-address">
             <ul class="footer-address__list">
               <li class="footer-address__item">
@@ -426,30 +375,30 @@
         <div class="join footer__join">
           <h3 class="join__title">присоединяйтесь</h3>
           <ul class="join__list">
-            <li class="join__item">
-              <button type="button" class="join__button social">
-                <svg class="join__icon">
+            <li class="social__item">
+              <button type="button" class="social__button social__button--join">
+                <svg class="social__icon">
                   <use href="./images/sprite.svg#icon-instagram"></use>
                 </svg>
               </button>
             </li>
-            <li class="join__item">
-              <button type="button" class="join__button social social">
-                <svg class="join__icon">
+            <li class="social__item">
+              <button type="button" class="social__button social__button--join">
+                <svg class="social__icon">
                   <use href="./images/sprite.svg#icon-twitter"></use>
                 </svg>
               </button>
             </li>
-            <li class="join__item">
-              <button type="button" class="join__button social social">
-                <svg class="join__icon">
+            <li class="social__item">
+              <button type="button" class="social__button social__button--join">
+                <svg class="social__icon">
                   <use href="./images/sprite.svg#icon-facebook"></use>
                 </svg>
               </button>
             </li>
-            <li class="join__item">
-              <button type="button" class="join__button social social">
-                <svg class="join__icon">
+            <li class="social__item">
+              <button type="button" class="social__button social__button--join">
+                <svg class="social__icon">
                   <use href="./images/sprite.svg#icon-linkedin"></use>
                 </svg>
               </button>

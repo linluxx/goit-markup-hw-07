@@ -17,10 +17,6 @@
   display: flex;
 }
 
-.join__item:not(:last-child) {
-  margin-right: 10px;
-}
-
 .join__button {
   background-color: $social-btn-bg-scnd;
   fill: $social-btn-fill-scnd;
@@ -29,9 +25,4 @@
   &:focus {
     background-color: $active-btn-bg;
   }
-}
-
-.join__icon {
-  width: 20px;
-  height: 20px;
 }
